@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".presentation.camera.CameraFragment">
+
+    <com.otaliastudios.cameraview.CameraView
+        android:id="@+id/camera"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cameraPreview="glSurface"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cameraAudio="on"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="400dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:id="@+id/snap"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ic_snap"
+        android:background="@drawable/custom_ripple"
+        android:clickable="true"
+        android:backgroundTint="#808080"
+        app:maxImageSize="80dp"
+        app:fabCustomSize="80dp"
+        app:layout_constraintStart_toStartOf="@id/camera"
+        app:layout_constraintEnd_toEndOf="@id/camera"
+        app:layout_constraintTop_toBottomOf="@id/camera"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:contentDescription="@string/snap" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/send_sos"
+        android:backgroundTint="#808080"
+        app:layout_constraintStart_toStartOf="@id/snap"
+        app:layout_constraintEnd_toEndOf="@id/snap"
+        app:layout_constraintTop_toBottomOf="@id/snap"
+        android:layout_marginTop="40dp"
+        android:id="@+id/send"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

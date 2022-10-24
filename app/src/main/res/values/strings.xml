@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Seamfix SOS</string>
+    <string name="location_permission_error">Permission was not granted! \n\n Enable permission manually in this application\'s settings and restart the application.</string>
+    <string name="location_optimization_error">Location Optimization Permission was not granted! \n\n Enable permission manually in application settings \n and restart the application.</string>
+    <string name="general_main_error">An error occurred in getting your location! \n\n Ensure your device is connected to the internet \n\n Swipe down to refresh.</string>
+    <string name="enable_gps">Enable your GPS and restart!</string>
+    <string name="location_permission">Location Permission</string>
+    <string name="access_location_message">This application requires access to your location to function!</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="gps_required_message">GPS is required for this application to function!</string>
+    <string name="snap">Snap</string>
+    <string name="send_sos">Send SOS</string>
+    <string name="send_sos_req">Send SOS?</string>
+    <string name="ask_me">Ask Me</string>
+
+</resources>
